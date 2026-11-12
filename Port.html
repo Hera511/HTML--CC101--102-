@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #eeeeee;
+            margin: 0;
+        }
+
+        header {
+            background-color: #222222;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444444;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        section {
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #333333;
+        }
+
+        footer {
+            background-color: #222222;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Andrei T. Gamurot</h1>
+        <p>BS Information Technology - 1A</p>
+    </header>
+
+    <nav>
+        <a href="#personal">Personal Information</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#java">Java Code</a>
+    </nav>
+
+    <section id="personal">
+        <h2>Personal Information</h2>
+
+        <p>Name: Andrei T. Gamurot</p>
+        <p>Course: BS Information Technology</p>
+        <p>Section: Block A (Achievers)</p>
+        <p>Email: gamurotandrei814@gmail.com</p>
+
+        <p>
+            Hello! I am an IT student who likes new challenges to solve.
+        </p>
+    </section>
+
+    <section id="education">
+        <h2>Educational Background</h2>
+
+        <h3>College</h3>
+        <p>Our Lady of the Sacred Heart College of Guimba, Inc.</p>
+        <p>BS Information Technology</p>
+
+        <h3>Senior High School</h3>
+        <p>Bartolome Sangalang National High School</p>
+        <p>ABM</p>
+        <p>With High Honor</p>
+
+        <h3>Junior High School</h3>
+        <p>Bartolome Sangalang National High School</p>
+        <p>With Honor</p>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+
+        <ul>
+            <li>Basic HTML</li>
+            <li>Basic CSS</li>
+            <li>Java Programming</li>
+            <li>Problem Solving</li>
+        </ul>
+    </section>
+
+    <section id="java">
+        <h2>Java Code</h2>
+
+        <p>CC102 Final Performance Task</p>
+
+        <pre>
+package java;
+
+import java.util.*;
+
+public class NumberGame {
+    public static void main(String[] args) {
+
+        Scanner hera = new Scanner(System.in);
+        Random random = new Random();
+
+        int number = random.nextInt(100) + 1;
+        int guess;
+        int attempts = 0;
+
+        System.out.println("=== NUMBER GUESSING GAME ===");
+        System.out.println("Guess a number from 1 to 100!");
+
+        while (true) {
+
+            System.out.print("\nEnter your guess: ");
+            guess = hera.nextInt();
+
+            attempts++;
+
+            if (guess > number) {
+                System.out.println("Too high!");
+            }
+            else if (guess < number) {
+                System.out.println("Too low!");
+            }
+            else {
+                System.out.println("\nCongratulations! You won!");
+                System.out.println("Number: " + number);
+                System.out.println("Attempts: " + attempts);
+                break;
+            }
+        }
+
+        hera.close();
+    }
+}
+
+        </pre>
+        <a href="java/NumberGame.java" download>
+    Download Java Source Code
+</a>
+    </section>
+
+    <footer>
+        <p>© 2026 Andrei T. Gamurot</p>
+    </footer>
+
+</body>
+</html>
